@@ -30,7 +30,7 @@ function createWindow() {
 
     win.setMenu(null)
 
-    win.setMenuBarVisibility(false)
+    win.setAutoHideMenuBar(true)
 
     win.loadURL(`file://${__dirname}/bundle/index.html`)
 
