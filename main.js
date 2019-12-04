@@ -30,6 +30,8 @@ function createWindow() {
 
     win.setMenu(null)
 
+    win.setMenuBarVisibility(false)
+
     win.loadURL(`file://${__dirname}/bundle/index.html`)
 
     win.on("closed", () => {
