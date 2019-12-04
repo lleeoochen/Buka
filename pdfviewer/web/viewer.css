@@ -13,6 +13,20 @@
  * limitations under the License.
  */
 
+
+.back-to-main-btn {
+  float: left;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  margin: 7px 20px;
+  background: url(../img/back.png) no-repeat center;
+}
+
+.back-to-main-btn:hover {
+  background-color: #222;
+}
+
 .textLayer {
   position: absolute;
   left: 0;
@@ -167,9 +181,9 @@
   list-style: none; 
 }
 
-/*.page {
+.page {
   display: inline-block;
-}*/
+}
 
 .pdfViewer.removePageBorders .page {
   margin: 0px auto 10px auto;
@@ -1065,6 +1079,10 @@ html[dir='rtl'] #findNext {
   display: inline-block;
   top: 4px;
   left: 7px;
+}
+
+html[dir='ltr'] .toolbarButton#backToMainButton::before {
+  content: url(images/findbarButton-previous.png);
 }
 
 html[dir="ltr"] .secondaryToolbarButton::before {

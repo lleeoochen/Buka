@@ -145,6 +145,9 @@ See https://github.com/adobe-type-tools/cmap-resources
           <div id="toolbarContainer">
             <div id="toolbarViewer">
               <div id="toolbarViewerLeft">
+                <button id="backToMainButton" class="back-to-main-btn toolbarButton" title="Back to Main" v-show="! toggleBooksContent" onclick="backToMain()">
+                  <span data-l10n-id="toggle_sidebar_label">Back to Main</span>
+                </button>
                 <button id="sidebarToggle" class="toolbarButton" title="Toggle Sidebar" tabindex="11" data-l10n-id="toggle_sidebar">
                   <span data-l10n-id="toggle_sidebar_label">Toggle Sidebar</span>
                 </button>

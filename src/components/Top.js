@@ -3,7 +3,7 @@ import { mapState, mapGetters, mapActions } from 'vuex'
 import Translate from './Translate'
 
 export default {
-    template: `<div class="top">
+    template: `<div class="top" style="display: none;">
                     <button :class="['translate-window-btn' , { 'active-top-btn' : showTranslate} ]" title="Translate" @click="updateShowTranslate"></button>
                     <input type="range" id="brightness" @input="updateBrightness" class="fr" min="0" max="1" step="0.02" value="1" v-if="! toggleBooksContent"
                         title="Brightness" />

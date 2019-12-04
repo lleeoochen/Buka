@@ -34,6 +34,11 @@ var SCALE_SELECT_PADDING = 22;
 var PAGE_NUMBER_LOADING_INDICATOR = 'visiblePageIsLoading';
 var DISABLE_AUTO_FETCH_LOADING_BAR_TIMEOUT = 5000;
 
+function backToMain() {
+  parent.document.getElementsByClassName('back-to-main-btn')[0].click();
+}
+
+
 function configure(PDFJS) {
   PDFJS.imageResourcesPath = './images/';
   PDFJS.workerSrc = '../build/pdf.worker.js';
@@ -7360,7 +7365,7 @@ function webViewerInitialized() {
   document.getElementById('openFile').addEventListener('click',
     SecondaryToolbar.openFileClick.bind(SecondaryToolbar));
 
-  var isDualPage = false
+  var isDualPage = true
   document.getElementById('dualPage').addEventListener('click', function() {
     try {
       document.getElementById('dualPage').classList.toggle('activeBtn')
